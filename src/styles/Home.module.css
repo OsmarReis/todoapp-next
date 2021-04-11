@@ -1,0 +1,17 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background-purple);
+
+  padding: clamp(2rem, 4vw, 5rem);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: clamp(1rem, 5vw, 5rem);
+  font-weight: 600;
+  color: var(--title);
+  margin: 0 auto;
+}

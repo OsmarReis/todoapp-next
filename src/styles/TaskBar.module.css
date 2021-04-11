@@ -1,0 +1,53 @@
+.taskBarAdd {
+  width: clamp(26rem, 80vw, 120rem);
+  height: clamp(3rem, 5vw, 7rem);
+  background: var(--background-taskbar);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border: none;
+  border-radius: clamp(0.5rem, 1vw, 1.5rem);
+
+  margin: 0 auto;
+  margin-top: clamp(3rem, 2.5vw, 5rem);
+}
+
+.taskBarAdd input {
+  background: inherit;
+  width: 100%;
+  height: 3rem;
+
+  margin-left: clamp(1rem, 2vw, 3.5rem);
+
+  font-size: clamp(1.2rem, 2vw, 2.4rem);
+  color: var(--dark-purple);
+
+  border: none;
+  outline: none;
+}
+
+.taskBarAdd input::placeholder {
+  color: var(--dark-purple);
+  opacity: 50%;
+}
+
+.taskBarAdd button {
+  width: clamp(4rem, 10vw, 8rem);
+  height: 100%;
+  background: var(--dark-purple);
+  border: none;
+  border-radius: inherit;
+
+  animation-duration: background 200ms;
+  outline: none;
+}
+
+.taskBarAdd button:hover {
+  opacity: 80%;
+}
+
+.taskBarAdd button > img {
+  width: clamp(1.6rem, 2vw, 3.6rem);
+  height: clamp(1.6rem, 2vw, 3.6rem);
+}
