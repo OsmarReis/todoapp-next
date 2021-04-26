@@ -1,6 +1,6 @@
 .addTodoForm {
-  width: clamp(26rem, 80vw, 100rem);
-  height: clamp(3rem, 5vw, 7rem);
+  width: clamp(30rem, 80vw, 100rem);
+  height: clamp(4rem, 5vw, 7rem);
   background: var(--background-taskbar);
   display: flex;
   align-items: center;
@@ -21,7 +21,7 @@
 
   margin-left: clamp(1rem, 2vw, 3.5rem);
 
-  font-size: clamp(1.2rem, 2vw, 2.4rem);
+  font-size: clamp(1.6rem, 2vw, 2.4rem);
   color: var(--dark-purple);
 
   border: none;
@@ -34,7 +34,7 @@
 }
 
 .addTodoForm button {
-  width: clamp(4rem, 10vw, 8rem);
+  width: clamp(5.5rem, 15vw, 8rem);
   height: 100%;
   background: var(--dark-purple);
   border: none;

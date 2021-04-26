@@ -6,7 +6,7 @@
 }
 
 .title {
-  font-size: clamp(1rem, 5vw, 5rem);
+  font-size: clamp(2.5rem, 5vw, 5rem);
   font-weight: 600;
   color: var(--title);
   margin: 0 auto;

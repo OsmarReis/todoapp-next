@@ -4,7 +4,7 @@
 
 .cardContainer {
   width: 100%;
-  height: clamp(3.2rem, 5vw, 7rem);
+  height: clamp(4rem, 6vw, 7rem);
   display: flex;
 
   align-items: center;
@@ -32,14 +32,14 @@
 
 .textContainer span:first-child {
   font: 600 12px "Nunito", sans-serif;
-  font-size: clamp(1rem, 2vw, 2rem);
+  font-size: clamp(1.4rem, 3.6vw, 2.5rem);
   margin-left: clamp(0.5rem, 2vw, 5rem);
 }
 
 .textContainer span:last-child {
   font: italic 400 12px "Nunito", sans-serif;
-  font-size: clamp(1rem, 2vw, 2rem);
-  margin-right: 5px;
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  margin-right: 10px;
 }
 
 .commandButtons {
