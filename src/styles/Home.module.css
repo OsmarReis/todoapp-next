@@ -1,8 +1,4 @@
 .container {
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--background-purple);
-
   padding: clamp(2rem, 4vw, 5rem);
 
   display: flex;
@@ -14,4 +10,10 @@
   font-weight: 600;
   color: var(--title);
   margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 2rem 0;
+  }
 }

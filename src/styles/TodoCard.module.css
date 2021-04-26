@@ -1,0 +1,127 @@
+.active {
+  opacity: 0.25;
+}
+
+.cardContainer {
+  width: 100%;
+  height: clamp(3.2rem, 5vw, 7rem);
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardContainer:nth-child(odd) {
+  background: var(--background-dark);
+  color: var(--bright-pink);
+}
+.cardContainer:nth-child(even) {
+  background: var(--background-bright);
+  color: var(--dark-purple);
+}
+
+.textContainer {
+  width: 80%;
+  background: inherit;
+  border: none;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.textContainer span:first-child {
+  font: 600 12px "Nunito", sans-serif;
+  font-size: clamp(1rem, 2vw, 2rem);
+  margin-left: clamp(0.5rem, 2vw, 5rem);
+}
+
+.textContainer span:last-child {
+  font: italic 400 12px "Nunito", sans-serif;
+  font-size: clamp(1rem, 2vw, 2rem);
+  margin-right: 5px;
+}
+
+.commandButtons {
+  height: 100%;
+  display: flex;
+  border: none;
+}
+
+.commandButtons button:first-child {
+  background: #12e288;
+}
+
+.commandButtons button:last-child {
+  background: #ff0a12;
+}
+
+.commandButtons button {
+  width: clamp(4rem, 10vw, 8rem);
+  height: 100%;
+
+  align-items: right;
+  justify-items: right;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.commandButtons button img {
+  width: clamp(1.6rem, 2vw, 3.6rem);
+  height: clamp(1.6rem, 2vw, 3.6rem);
+}
+
+@media (min-width: 768px) {
+  .cardContainer {
+    width: clamp(26rem, 80vw, 120rem);
+    border-radius: clamp(0.5rem, 1vw, 1.5rem);
+    margin: 2.5px auto;
+  }
+
+  .commandButtons button:first-child {
+    position: relative;
+    background: var(--white-pink);
+
+    animation-duration: background 200ms;
+  }
+
+  .commandButtons button:first-child:hover {
+    background: #12e288;
+    opacity: 90%;
+  }
+
+  .commandButtons button:first-child:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 10%;
+    height: 80%;
+    width: 1px;
+    border-right: 1px solid #000;
+  }
+
+  .commandButtons button:last-child {
+    position: relative;
+    background: var(--white-pink);
+    border-top-right-radius: clamp(0.5rem, 1vw, 1.5rem);
+    border-bottom-right-radius: clamp(0.5rem, 1vw, 1.5rem);
+
+    animation-duration: background 500ms;
+  }
+
+  .commandButtons button:last-child:hover {
+    background: #ff0a12;
+    opacity: 90%;
+  }
+
+  .commandButtons button:last-child:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10%;
+    height: 80%;
+    width: 1px;
+    border-left: 1px solid #000;
+  }
+}
