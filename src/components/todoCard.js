@@ -4,16 +4,6 @@ import {useState} from "react";
 export default function TodoCard(props) {
   const [isToggled, hasToggled] = useState(true);
 
-  const Toggle = () => {
-    if (isToggled) {
-      hasToggled(false);
-      console.log(isToggled);
-    } else {
-      hasToggled(true);
-      console.log(isToggled);
-    }
-  };
-
   const gtDate = (Dt) => {
     const Months = [
       "Jan",
