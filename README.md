@@ -1,6 +1,6 @@
 ## To code
 
-To starting coding type:
+To start coding type:
 
 ```bash
 git clone https://github.com/OsmarReis/todoapp-next.git
